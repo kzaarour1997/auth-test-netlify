@@ -1,2 +1,2 @@
-web: node server.js
+web: next dev
 frontend: npm run dev

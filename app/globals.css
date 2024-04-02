@@ -1,4 +1,12 @@
-html,
+html {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 body {
   width: 100%;
   margin: 0px;
@@ -209,21 +217,6 @@ body {
 }
 
 /* Avatar */
-.avatar {
-  display: inline-block;
-  margin-bottom: 0;
-  height: 3rem;
-  width: 3rem;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .rounded-circle {
   border-radius: 50% !important;
@@ -252,16 +245,6 @@ nav {
 
 .stays-heading {
   font-weight: 700;
-}
-
-.back-to-search {
-  font-size: 1.1rem;
-  color: #e61e4d;
-  font-weight: 600;
-}
-
-.back-to-search:hover {
-  color: #e61e4d;
 }
 
 .card {
@@ -317,39 +300,6 @@ nav {
   padding-top: 0.3rem;
 }
 
-/* Room Details Page */
-
-.booking-card .booking-btn:hover {
-  color: white;
-  background-color: #e61e4d;
-}
-
-.price-per-night {
-  font-size: 1.3rem;
-}
-
-.booking-card {
-  border: 1px solid #e3e3e3;
-  border-radius: 20px;
-  padding: 5px 10px;
-}
-
-.room-feature {
-  font-size: 1.1rem;
-  color: #404040;
-}
-
-.room-feature p {
-  margin-left: 0.4rem;
-  display: inline-block;
-}
-
-/* Reviews */
-.review_user {
-  font-size: 0.8rem;
-  color: grey;
-}
-
 /* Footer */
 footer {
   margin-top: auto;
@@ -362,55 +312,4 @@ footer {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-}
-
-/* Pagination */
-.page-item.active .page-link {
-  background-color: #e61e4d;
-  border-color: #e61e4d;
-  color: #fff;
-}
-
-.page-item.active .page-link:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
-.pagination .page-link {
-  color: #e61e4d;
-}
-
-.pagination .page-link:hover {
-  color: #e61e4d;
-}
-
-/* Booking Details */
-.booking-details p {
-  margin-left: 1.5rem;
-}
-
-.redColor {
-  color: red;
-}
-
-.greenColor {
-  color: green;
-}
-
-/* Sidebar */
-
-.list-group-item:first-child {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.list-group-item {
-  border: none;
-}
-
-.list-group-item.active {
-  background-color: #f3f4f6;
-  border-color: #f3f4f6;
-  border-radius: 0.3rem;
-  color: #e61e4d;
 }

@@ -4,7 +4,10 @@ interface IUserState {
   user: any;
   isAuthenticated: boolean;
 }
-
+type PayloadAction<T> = {
+  type: string;
+  payload: T;
+};
 const initialState: IUserState = {
   user: null,
   isAuthenticated: false,

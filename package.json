@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start": "node server.js",
     "start:frontend": "next dev",
     "start:backend": "nodemon server.js",
     "lint": "next lint"

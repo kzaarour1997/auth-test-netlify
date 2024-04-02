@@ -13,7 +13,6 @@
   "dependencies": {
     "@types/react-redux": "^7.1.33",
     "bcryptjs": "^2.4.3",
-    "bootstrap": "^5.3.3",
     "next": "14.1.4",
     "next-auth": "^4.24.7",
     "next-connect": "^1.0.0",
@@ -27,6 +26,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "bootstrap": "^5.3.3",
     "react-hot-toast": "^2.4.1",
     "typescript": "^5"
   }

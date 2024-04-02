@@ -5,9 +5,9 @@ export const authApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "https://intense-headland-29428-c4d6588f6b60.herokuapp.com",
   }),
-  endpoints: (builder) => ({
+  endpoints: (builder: any) => ({
     register: builder.mutation({
-      query(body) {
+      query(body: any) {
         return {
           url: "/register",
           method: "POST",
@@ -16,7 +16,7 @@ export const authApi = createApi({
       },
     }),
     login: builder.mutation({
-      query(body) {
+      query(body: any) {
         return {
           url: "/login",
           method: "POST",

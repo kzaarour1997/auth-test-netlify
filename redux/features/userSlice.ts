@@ -14,10 +14,10 @@ export const userSlice = createSlice({
   initialState,
   name: "userSlice",
   reducers: {
-    setUser: (state, action: PayloadAction<any>) => {
+    setUser: (state: any, action: PayloadAction<any>) => {
       state.user = action.payload;
     },
-    setIsAuthenticated: (state, action: PayloadAction<boolean>) => {
+    setIsAuthenticated: (state: any, action: PayloadAction<boolean>) => {
       state.isAuthenticated = action.payload;
     },
   },

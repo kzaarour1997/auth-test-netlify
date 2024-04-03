@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "./globals.module.css";
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Head from "./head";

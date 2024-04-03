@@ -1,6 +1,20 @@
-module.exports = {
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    // Modify webpack configuration here
-    return config;
-  },
+module.exports = (phase, { defaultConfig }) => {
+  return {
+    webpack: (config, options) => {
+      // Modify webpack config here
+      config.module.rules.push({
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "images",
+            },
+          },
+        ],
+      });
+
+      return config;
+    },
+  };
 };

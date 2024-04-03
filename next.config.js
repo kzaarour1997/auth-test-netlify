@@ -11,11 +11,11 @@ module.exports = (phase, { defaultConfig }) => {
               maxSize: 30 * 1024, // 30kb
             },
           },
-        },
-        {
-          test: /\.(sa|sc|c)ss$/,
-          use: ["style-loader", "css-loader", "sass-loader"],
         }
+        // {
+        //   test: /\.(sa|sc|c)ss$/,
+        //   use: ["style-loader", "css-loader"],
+        // }
       );
 
       return config;

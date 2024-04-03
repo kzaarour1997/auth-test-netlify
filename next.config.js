@@ -3,15 +3,8 @@ module.exports = (phase, { defaultConfig }) => {
     webpack: (config, options) => {
       // Modify webpack config here
       config.module.rules.push({
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              outputPath: "images",
-            },
-          },
-        ],
+        test: /\.(sa|sc|c)ss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
       });
 
       return config;

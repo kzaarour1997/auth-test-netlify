@@ -1,4 +1,4 @@
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Head from "./head";

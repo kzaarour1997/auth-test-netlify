@@ -3,8 +3,13 @@ module.exports = (phase, { defaultConfig }) => {
     webpack: (config, options) => {
       // Modify webpack config here
       config.module.rules.push({
-        test: /\.(sa|sc|c)ss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 30 * 1024, // 30kb
+          },
+        },
       });
 
       return config;

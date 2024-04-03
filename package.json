@@ -23,13 +23,12 @@
   },
   "devDependencies": {
     "@reduxjs/toolkit": "^2.2.3",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.23",
     "css-loader": "^6.10.0",
     "react-hot-toast": "^2.4.1",
     "sass-loader": "^14.1.1",
     "style-loader": "^3.3.4",
-    "typescript": "^5"
+    "typescript": "^5.4.3"
   }
 }

@@ -1,4 +1,4 @@
-// import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Head from "./head";
@@ -28,10 +28,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </GlobalProvider>
-        <Script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-          strategy="beforeInteractive" // Load the script before the page interactive phase
-        />
+
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></Script>
         <Script src="https://kit.fontawesome.com/9edb65c86a.js"></Script>
         <style>
